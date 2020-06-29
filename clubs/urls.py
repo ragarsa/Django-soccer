@@ -4,7 +4,7 @@ from .views import GetClubs, GetClub
 
 urlpatterns = [
     path('', GetClubs),
-    path('<int:id>', GetClub)
+    path('<int:id>', GetClub),
 
 
 ]

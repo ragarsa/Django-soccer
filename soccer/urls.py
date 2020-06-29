@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from clubs import urls as urls_clubs
-
+from players import urls as urls_players   
+from managers import urls as urls_managers
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('clubs/', include(urls_clubs))
+    path('clubs/', include(urls_clubs)),
+    path('players/', include(urls_players)),
+    path('managers/', include(urls_managers))
 
 ]
